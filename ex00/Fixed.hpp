@@ -6,11 +6,16 @@
 class	Fixed
 {
 	public:
-		Fixed();
+		Fixed(integer);
+		Fixed(const Fixed &copy);
+		/* Here i'll put the assignment operator overload */
 		~Fixed();
+		int			getRawBits(void) const;
+		void			setRawBits(int const raw);
 
 	private:
-		int	integer;
+		int			_integer;
+		static const int	_fractionalbits;
 
 };
 
