@@ -6,9 +6,10 @@
 class	Fixed
 {
 	public:
-		Fixed(integer);
-		Fixed(const Fixed &copy);
-		/* Here i'll put the assignment operator overload */
+		/* Fixed(integer); */
+		Fixed();
+		Fixed(const Fixed& copy);
+		Fixed& operator = (const Fixed& copy);
 		~Fixed();
 		int			getRawBits(void) const;
 		void			setRawBits(int const raw);

@@ -2,7 +2,7 @@ NAME = ORTHODOX1
 ORTHODOX1= ORTHODOX1
 
 SRC = 	main.cpp \
-	Fixed.cpp
+		Fixed.cpp
 
 CXX = c++ 
 
